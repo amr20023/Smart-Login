@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/my.css"/>
+  </head>
+  <body>
+    <section class="mainPage">
+      <div class="container p-5">
+        <div class="row log gy-3 m-auto text-center px-5 py-4">
+          <h1>Smart Login System</h1>
+          <div class="col-12">
+            <input
+              id="inputName"
+              type="text"
+              class="form-control myInput"
+              placeholder="Enter your name"
+            />
+            <div id="nameAlert" class="alert alert-danger py-1 mt-2 d-none">
+              name can not be less than 3 characters and with out numbers
+            </div>
+          </div>
+          <div class="col-12">
+            <input
+              id="inputMail"
+              type="email"
+              class="form-control myInput"
+              placeholder="Enter your email"
+            />
+            <div id="mailAlert" class="alert alert-danger py-1 mt-2 d-none">
+              mail should be gmail or yahoo
+            </div>
+          </div>
+          <div class="col-12">
+            <input
+              id="inputPass"
+              type="password"
+              class="form-control myInput"
+              placeholder="Enter Password"
+            />
+          </div>
+          <div class="col-12">
+            <div id="existsMail" class="alert alert-danger py-1 mt-2 d-none">
+              email already exists, try again
+            </div>
+            <button id="btn" class="form-control">Sign Up</button>
+          </div>
+
+          <p class="text-white">
+            have an account?<a href="index.html" class="text-white"> Sign in</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
